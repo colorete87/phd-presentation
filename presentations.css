@@ -1,0 +1,447 @@
+/* ============================================
+   ESTILOS COMPARTIDOS PARA PRESENTACIONES
+   Material de Soporte para el Curso de Fine-Tuning
+   ============================================ */
+
+/* Reducir tamaños de fuente globalmente */
+.reveal {
+    font-size: 20px !important; /* Reducido de 26px */
+}
+
+.reveal h1 {
+    font-size: 2.0em !important; /* Reducido de 2.5em */
+}
+
+.reveal h2 {
+    font-size: 1.5em !important; /* Reducido de 1.6em */
+}
+
+.reveal h3 {
+    font-size: 1.3em !important; /* Reducido de 1.3em */
+}
+
+.reveal h4 {
+    font-size: 1.1em !important; /* Reducido de 1em */
+}
+
+/* Tamaño específico para texto normal */
+.reveal p {
+    font-size: 1.1em !important; /* Reducir párrafos */
+}
+
+.reveal ul, .reveal ol {
+    font-size: 1.1em !important; /* Reducir listas */
+}
+
+.reveal li {
+    font-size: 1.1em !important; /* Reducir elementos de lista */
+}
+
+/* Estilos base */
+.reveal .slides section {
+    text-align: left;
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+    color: #1a365d;
+}
+
+.reveal .progress {
+    color: #3182ce;
+}
+
+/* Elementos de destacado */
+.highlight {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.emoji {
+    font-size: 1em; /* Reducido de 1.2em */
+}
+
+/* Bloques de código */
+.code-block {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 2px solid #3182ce;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    font-family: 'Courier New', monospace;
+    font-size: 0.8em;
+    white-space: pre-wrap;
+}
+
+/* Layout de dos columnas */
+.two-columns {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+}
+
+/* Enlaces de demostración */
+.demo-link {
+    background: linear-gradient(135deg, #3182ce 0%, #2c5aa0 100%);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 8px 0;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.demo-link:hover {
+    background: linear-gradient(135deg, #2c5aa0 0%, #1a365d 100%);
+    transform: translateY(-2px);
+}
+
+/* Tablas de comparación */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.comparison-table th,
+.comparison-table td {
+    border: 1px solid #e2e8f0;
+    padding: 15px;
+    text-align: left;
+}
+
+.comparison-table th {
+    background: linear-gradient(135deg, #3182ce 0%, #2c5aa0 100%);
+    color: white;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.comparison-table tr:nth-child(even) {
+    background-color: #f7fafc;
+}
+
+.comparison-table tr:hover {
+    background-color: #edf2f7;
+}
+
+/* Colores para pros y contras */
+.pros {
+    color: #38a169;
+    font-weight: 600;
+}
+
+.cons {
+    color: #e53e3e;
+    font-weight: 600;
+}
+
+/* Cajas de advertencia y éxito */
+.warning {
+    background: linear-gradient(135deg, #fef5e7 0%, #fed7aa 100%);
+    border: 2px solid #f6ad55;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.success {
+    background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%);
+    border: 2px solid #68d391;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+/* Lista de verificación */
+.checklist {
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    border-left: 6px solid #3182ce;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.checklist ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.checklist li:before {
+    content: "☐ ";
+    color: #3182ce;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.checklist li.checked:before {
+    content: "☑ ";
+    color: #38a169;
+    font-size: 1.2em;
+}
+
+/* Estilo para contenido sobre fondos de color */
+.reveal .slides section[data-background-color] h1,
+.reveal .slides section[data-background-color] h2,
+.reveal .slides section[data-background-color] h3,
+.reveal .slides section[data-background-color] p,
+.reveal .slides section[data-background-color] ul,
+.reveal .slides section[data-background-color] li {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Responsive design para pantallas pequeñas */
+@media (max-width: 768px) {
+    .two-columns {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .reveal {
+        font-size: 20px !important;
+    }
+    
+    .code-block {
+        font-size: 0.7em;
+        padding: 10px;
+    }
+}
+
+/* Estilos específicos para elementos de código inline */
+.reveal code {
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    border: 1px solid #3182ce;
+    border-radius: 4px;
+    padding: 3px 6px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: #2d3748;
+    font-weight: 500;
+}
+
+/* Mejoras para la legibilidad de listas */
+.reveal ul li, .reveal ol li {
+    margin-bottom: 0.3em;
+}
+
+/* Estilos para elementos de navegación */
+.reveal .controls {
+    color: #3182ce;
+    z-index: 1001 !important;
+    bottom: 100px !important;
+}
+
+
+.reveal .progress span {
+    background: linear-gradient(135deg, #3182ce 0%, #2c5aa0 100%);
+}
+
+/* Estilos para el número de slide */
+.reveal .slide-number {
+    background: rgba(49, 130, 206, 0.8) !important;
+    color: white !important;
+    padding: 8px 12px !important;
+    border-radius: 20px !important;
+    font-size: 0.8em !important;
+    font-weight: 600 !important;
+    bottom: 45px !important;
+    right: 15px !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3) !important;
+    z-index: 1002 !important;
+}
+
+/* ============================================
+   CLASES PARA PARTES DE LA PRESENTACIÓN
+   ============================================ */
+
+/* Parte 1 - Color azul claro */
+.part-1 {
+    background-color: #E6F7FF !important;
+    transition: background-color 0.8s ease;
+}
+
+/* Parte 2 - Color verde claro */
+.part-2 {
+    background-color: #E8F5E9 !important;
+    transition: background-color 0.8s ease;
+}
+
+/* Parte 3 - Color amarillo claro */
+.part-3 {
+    background-color: #FFF8E7 !important;
+    transition: background-color 0.8s ease;
+}
+
+/* Parte 4 - Color naranja claro */
+.part-4 {
+    background-color: #FFE5CC !important;
+    transition: background-color 0.8s ease;
+}
+
+/* Parte 5 - Color púrpura claro */
+.part-5 {
+    background-color: #F3E8FF !important;
+    transition: background-color 0.8s ease;
+}
+
+/* ============================================
+   HEADER, FOOTER Y LOGOS
+   ============================================ */
+
+/* Header con título del curso */
+.presentation-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #1a365d 0%, #2c5aa0 100%);
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1000;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Footer con información de la facultad */
+.presentation-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-align: center;
+    z-index: 1000;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Logo izquierdo */
+.presentation-logo-left {
+    position: fixed;
+    top: 45px;
+    left: 20px;
+    z-index: 1001;
+    max-height: 100px;
+    max-width: 240px;
+}
+
+/* Logo derecho */
+.presentation-logo-right {
+    position: fixed;
+    top: 45px;
+    right: 20px;
+    z-index: 1001;
+    max-height: 100px;
+    max-width: 240px;
+}
+
+/* /* Ajustar contenido para evitar solapamiento con header y footer */
+/* .reveal .slides { */
+/*     margin-top: 60px !important; */
+/*     margin-bottom: 80px !important; */
+/*     width: 95% !important; */
+/*     max-width: 1200px !important; */
+/* } */
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .presentation-header {
+        font-size: 0.5em;
+        padding: 8px 10px;
+    }
+    
+    .presentation-footer {
+        font-size: 0.4em;
+        padding: 6px 10px;
+    }
+    
+    .presentation-logo-left,
+    .presentation-logo-right {
+        max-height: 40px;
+        max-width: 100px;
+    }
+    
+    .reveal .slide-number {
+        bottom: 80px !important;
+        right: 15px !important;
+        font-size: 0.7em !important;
+        padding: 6px 10px !important;
+    }
+    
+}
+
+/* ============================================
+   ESTILOS PARA EL COMITÉ DE TESIS
+   ============================================ */
+
+/* Contenedor principal del comité optimizado para formato wide */
+.committee-container {
+    display: flex;
+    gap: 80px;
+    margin-top: 20px;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Columna izquierda (Director y Co-Director) */
+.committee-left {
+    flex: 1;
+    padding-right: 25px;
+}
+
+/* Columna derecha (Jurados) */
+.committee-right {
+    flex: 1;
+    padding-left: 25px;
+}
+
+/* Estilos para las listas del comité */
+.committee-left ul,
+.committee-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.committee-left li,
+.committee-right li {
+    margin: 4px 0;
+    padding: 2px 0;
+    line-height: 1.3;
+}
+
+.committee-left li strong,
+.committee-right li strong {
+    color: #1a365d;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* Responsive para el comité */
+@media (max-width: 768px) {
+    .committee-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .committee-left,
+    .committee-right {
+        padding: 0;
+    }
+}
