@@ -35,66 +35,97 @@
         <!-- ######## PARTE 0 ######## -->
         <!-- ######################### -->
         <!-- Slide 1: Título -->
-        <section data-background-image="./images/background.png" data-background-size="cover" data-background-position="center" data-auto-animate>
-          <h1 style="text-align: center;">Estudio y diseño de arquitecturas digitales para la implementación eficiente de redes neuronales convolucionales</h1>
+        <section data-background-image="./images/background.png" data-background-size="cover" data-background-position="center">
+          <h1>Estudio y diseño de arquitecturas digitales para la implementación eficiente de redes neuronales convolucionales</h1>
           <h3 style="text-align: center;">Tesis Doctoral</h3>
           <h4 style="text-align: center;">3 de octubre de 2025</h4>
           <div class="committee-container">
-            <div class="committee-left">
+            <div class="committee">
               <div>
-                <strong>Autor:</strong>
-                <ul>
-                  <li>Ing. Federico Giordano Zacchigna</li>
-                </ul>
+                <p><strong>Autor:</strong> Ing. Federico Giordano Zacchigna</p>
               </div>
-              <br>
               <div>
-                <strong>Director:</strong>
-                <ul>
-                  <li>Dr. Ing. Ariel Lutenberg (FIUBA-CONICET)</li>
-                </ul>
+                <p><strong>Director:</strong> Dr. Ing. Ariel Lutenberg (FIUBA-CONICET)</p>
               </div>
-              <br>
               <div>
-                <strong>Co-Director:</strong>
-                <ul>
-                  <li>Dr. Ing. Sergio Lew (FIUBA-CONICET)</li>
-                </ul>
+                <p><strong>Co-Director:</strong> Dr. Ing. Sergio Lew (FIUBA-CONICET)</p>
               </div>
-            </div>
-            <div class="committee-right">
-              <strong>Jurados:</strong>
-              <ul>
-                <li>Dr. Hernán Merlino (FIUBA-CONICET)</li>
-                <li>Dr. Pedro Julián (UNS-CONICET)</li>
-                <li>Dr. Gustavo Javier Meschino (UNMDP-CONICET)</li>
-                <li>Dra. Paola Britos (UNRN-SPU)</li>
-              </ul>
+              <div>
+                <strong>Jurados:</strong><br>
+                  Dr. Hernán Merlino (FIUBA-CONICET)<br>
+                  Dr. Pedro Julián (UNS-CONICET)<br>
+                  Dr. Gustavo Javier Meschino (UNMDP-CONICET)<br>
+                  Dra. Paola Britos (UNRN-SPU)<br>
+              </div>
             </div>
           </div>
         </section>
 
 
         <!-- ######################### -->
+        <!-- ######## PARTE 0.1 ###### -->
+        <!-- ######################### -->
+        <section class="part-1" data-background-transition="zoom">
+          <!-- Slide:  -->
+          <section class="part-1" data-background-transition="zoom" data-auto-animate>
+            <h1 class="center-title">Agenda</h1>
+          </section>
+          <!-- Slide: Hoja de ruta -->
+          <section class="part-1" data-background-transition="zoom" data-auto-animate>
+            <h1 class="fixed-title">Agenda</h1>
+            <ol>
+              <li>El Desafío: IA en el mundo real.</li>
+              <li>Mi Aporte: una solución en dos partes.</li>
+              <li>Aporte 1: metodología de implementación sistemática.</li>
+              <li>Aporte 2: Cuantización flexible para maximizar eficiencia.</li>
+              <li>Resultados y conclusiones.</li>
+            </ol>
+          </section>
+        </section>
+
+
+        <!-- ######################### -->
         <!-- ######## PARTE 1 ######## -->
         <!-- ######################### -->
-        <section class="part-1" data-background-transition="zoom" data-auto-animate>
+        <section class="part-2" data-background-transition="zoom">
           <!-- Slide:  -->
-          <section class="part-1" data-background-transition="zoom" data-auto-animate>
-            <h1>Agenda</h1>
-            <h3>Información COMPLETAR</h3>
-            <h4>Descripción COMPLETAR</h4>
+          <section class="part-2" data-background-transition="zoom" data-auto-animate>
+            <h1 class="center-title">Introducción y conceptos fundamentales</h1>
           </section>
-          <!-- Slide:  -->
-          <section class="part-1" data-background-transition="zoom" data-auto-animate>
-            <h1>Agenda</h1>
-            <h2><span class="emoji">🎯</span> Objetivos de esta Sección</h2>
-            <p>COMPLETAR</p>
-        1.  El Desafío: La IA en el mundo real.
-        2.  Mi Aporte: Una solución en dos partes.
-        3.  Aporte 1: Metodología de implementación sistemática.
-        4.  Aporte 2: Cuantización flexible para máxima eficiencia.
-        5.  Resultados y Conclusiones.
+          <!-- Slide: ¿Qué es una CNN? -->
+          <section class="part-2" data-background-transition="zoom" data-auto-animate>
+            <h1 class="fixed-title">Introducción y conceptos fundamentales</h1>
+            <h3>Aprendiendo a "Ver" como los Humanos</h3>
+            <h3>¿Qué es una Red Neuronal Convolucional (CNN)?</h3>
+            <div class="slide-content">
+              <p><strong>Concepto:</strong> Una CNN es un modelo inspirado en el cerebro que procesa imágenes en capas:</p>
+              <ul>
+                <li>Las primeras capas detectan cosas simples (bordes, colores)</li>
+                <li>Las capas más profundas reconocen objetos complejos (caras, autos)</li>
+              </ul>
+              <p><strong>Visual:</strong> Usar una figura como <code>figures/general_cnn_simple.png</code> o <code>figures/lenet5.png</code> para ilustrar las capas.</p>
+            </div>
+          </section>
+          <!-- Slide: El Desafío Técnico -->
+          <section class="part-2" data-background-transition="zoom" data-auto-animate>
+            <h1 class="fixed-title">Introducción y conceptos fundamentales</h1>
+            <h3>El balance entre costo y calidad</h3>
+            <h3>El desafío técnico: complejidad y precisión</h3>
+            <div class="slide-content">
+              <p><strong>Concepto:</strong> La "magia" de las redes neuronales está en sus números (los "pesos"). Usar números de alta precisión (como <code>float32</code>) da buenos resultados, pero es lento y consume mucha memoria.</p>
+              <p class="question"><strong>Pregunta Clave:</strong> ¿Podemos usar números de "baja precisión" para hacer la red más rápida y pequeña?</p>
+              <p class="source"><em>Fuente: <code>02-main_matter/2-specific.tex</code> - Sección 2.2 y 2.3</em></p>
+            </div>
+          </section>
+          <!-- Slide: La Solución Clave -->
+          <section class="part-2" data-background-transition="zoom" data-auto-animate>
+            <h1 class="fixed-title">Introducción y conceptos fundamentales</h1>
+            <h3>Comprimiendo la red: la idea de la cuantización</h3>
+            <h3>La solución clave: la cuantización</h3>
+            <div class="slide-content">
+              <p><strong>Concepto:</strong> La cuantización es el proceso de reducir la precisión de los números. Es como redondear. Esto reduce drásticamente el tamaño del modelo y la complejidad de las operaciones.</p>
+              <p><strong>Visual:</strong> Usar la figura <code>figures/specific_quantization_function_uniform.png</code> para mostrar cómo un rango continuo se mapea a niveles discretos.</p>
+            </div>
           </section>
         </section>
 
@@ -102,22 +133,169 @@
         <!-- ######################### -->
         <!-- ######## PARTE 2 ######## -->
         <!-- ######################### -->
-        <section class="part-2" data-background-transition="zoom" data-auto-animate>
+        <section class="part-3" data-background-transition="zoom">
           <!-- Slide:  -->
-          <section class="part-2" data-background-transition="zoom" data-auto-animate>
-            <h1>Introducción y Conceptos Fundamentales</h1>
-            <h3>Información COMPLETAR</h3>
-            <h4>Descripción COMPLETAR</h4>
+          <section class="part-3" data-background-transition="zoom" data-auto-animate>
+            <h1 class="center-title">Mis Aportes Originales</h1>
           </section>
-          <!-- Slide:  -->
-          <section class="part-2" data-background-transition="zoom" data-auto-animate>
-            <h1>Introducción y Conceptos Fundamentales</h1>
-            <h2>COMPLETAR</h2>
+          <!-- Slide: Mi Propuesta -->
+          <section class="part-3" data-background-transition="zoom" data-auto-animate>
+            <h1 class="fixed-title">Mis Aportes Originales</h1>
+            <h3>Mi Propuesta: Un Puente Integral del Software al Hardware</h3>
+            <div class="slide-content">
+              <p class="intro"><strong>Concepto:</strong> El núcleo de esta tesis es la creación de un flujo de trabajo completo para llevar modelos de IA desde el software al hardware de forma eficiente. Mis dos aportes no son ideas aisladas, sino que forman las dos mitades de este puente:</p>
+              <ol>
+                <li><strong>La Metodología Sistemática (Aporte 1):</strong> Provee el <strong>mapa</strong> y la <strong>estructura</strong> para la construcción del hardware. Responde a la pregunta: <em>¿Cómo lo construimos de forma ordenada?</em></li>
+                <li><strong>La Cuantización Flexible (Aporte 2):</strong> Provee la <strong>herramienta de optimización</strong> para que esa estructura sea lo más eficiente posible. Responde a la pregunta: <em>¿Cómo lo hacemos pequeño y rápido sin perder calidad?</em></li>
+              </ol>
+              <div class="flow-diagram">
+                <p><strong>Visual:</strong> Un diagrama de flujo muy simple que muestre:</p>
+                <p><code>Modelo IA (Software)</code> → <strong><code>Metodología (Aporte 1)</code></strong> → <strong><code>Cuantización (Aporte 2)</code></strong> → <code>Implementación (Hardware)</code></p>
+              </div>
+            </div>
           </section>
+        </section>
+
+
+        <!-- ######################### -->
+        <!-- ######## PARTE 2.1 ###### -->
+        <!-- ######################### -->
+        <section class="part-4" data-background-transition="zoom">
           <!-- Slide:  -->
-          <section class="part-2" data-background-transition="zoom" data-auto-animate>
-            <h1>Introducción y Conceptos Fundamentales</h1>
-            <h2>COMPLETAR</h2>
+          <section class="part-4" data-background-transition="zoom" data-auto-animate>
+            <h1 class="center-title">Mis Aportes Originales</h1>
+            <h2 class="center-title">para la Metodología</h2>
+          </section>
+          <!-- Slide: Metodología Sistemática -->
+          <section class="part-4" data-background-transition="zoom" data-auto-animate>
+            <h1 class="fixed-title">Mis Aportes Originales</h1>
+            <h2 class="fixed-title">para la Metodología</h2>
+            <h3>Del Caos al Orden: Un Proceso en 9 Fases</h3>
+            <h4>Aporte 1: Metodología de Implementación Sistemática</h4>
+            <div class="slide-content">
+              <p><strong>Concepto:</strong> Se propone un flujo de trabajo claro que descompone el problema en 9 fases manejables: desde el diseño en alto nivel hasta la verificación final en hardware.</p>
+              <p><strong>Beneficio:</strong> Esto hace que el proceso sea reproducible, escalable y más fácil de optimizar.</p>
+              <p class="source"><em>Fuente: <code>02-main_matter/3-architectures.tex</code> - Sección 3.2.1</em></p>
+            </div>
+          </section>
+          <!-- Slide: Arquitectura Modular -->
+          <section class="part-4" data-background-transition="zoom" data-auto-animate>
+            <h1 class="fixed-title">Mis Aportes Originales</h1>
+            <h2 class="fixed-title">para la Metodología</h2>
+            <h3>Organizando el Hardware: Bloques Especializados</h3>
+            <h4>Aporte 1: Arquitectura Modular (Los 3 Tipos de Bloques)</h4>
+            <div class="slide-content">
+              <p><strong>Concepto:</strong> La arquitectura se organiza en 3 tipos de bloques: de <strong>Procesamiento (PB)</strong>, de <strong>Flujo de Datos (DFB)</strong> y de <strong>Organización de Memoria (MOB)</strong>. Cada uno tiene una función clara.</p>
+              <p><strong>Visual:</strong> Un diagrama simple que muestre estos tres tipos de bloques interconectados.</p>
+              <p class="source"><em>Fuente: <code>02-main_matter/3-architectures.tex</code> - Sección 3.5.7</em></p>
+            </div>
+          </section>
+          <!-- Slide: Arquitectura Real y Verificada -->
+          <section class="part-4" data-background-transition="zoom" data-auto-animate>
+            <h1 class="fixed-title">Mis Aportes Originales</h1>
+            <h2 class="fixed-title">para la Metodología</h2>
+            <h3>De la Teoría a la Práctica: El Hardware Funcionando</h3>
+            <h4>Resultado del Aporte 1: Una Arquitectura Real y Verificada</h4>
+            <div class="slide-content">
+              <p><strong>Concepto:</strong> La metodología no fue solo un ejercicio teórico. Se aplicó para construir una arquitectura de hardware completa y funcional en un dispositivo real (una FPGA).</p>
+              <p><strong>Beneficio Clave:</strong> Se demostró que el método sistemático permite crear arquitecturas que son modulares, escalables y, lo más importante, verificables. Esto sienta las bases para todo el trabajo de optimización que viene después.</p>
+              <p><strong>Visual:</strong> Se puede usar la figura <code>figures/architecture.png</code> o <code>figures/HW_structure.png</code> para mostrar un esquema del sistema implementado.</p>
+            </div>
+          </section>
+        </section>
+
+
+        <!-- ######################### -->
+        <!-- ######## PARTE 2.2 ###### -->
+        <!-- ######################### -->
+        <section class="part-5" data-background-transition="zoom">
+          <!-- Slide:  -->
+          <section class="part-5" data-background-transition="zoom" data-auto-animate>
+            <h1 class="center-title">Mis Aportes Originales</h1>
+            <h2 class="center-title">para la Cuantización</h2>
+          </section>
+          <!-- Slide: Cuantización Flexible -->
+          <section class="part-5" data-background-transition="zoom" data-auto-animate>
+            <h1 class="fixed-title">Mis Aportes Originales</h1>
+            <h2 class="fixed-title">para la Cuantización</h2>
+            <h3>El Dilema de la Cuantización: ¿Uniforme o No Uniforme?</h3>
+            <h4>Aporte 2: Cuantización Flexible (FQ)</h4>
+            <div class="slide-content">
+              <p><strong>Concepto:</strong></p>
+              <ul>
+                <li><strong>Uniforme:</strong> Fácil de implementar en hardware, pero imprecisa.</li>
+                <li><strong>No Uniforme:</strong> Muy precisa, pero incompatible con hardware eficiente.</li>
+              </ul>
+              <p><strong>Mi Solución:</strong> Cuantización Flexible, que combina lo mejor de ambos mundos.</p>
+              <p class="source"><em>Fuente: <code>02-main_matter/4-flexible_quantization.tex</code> - Sección 4.1.3</em></p>
+            </div>
+          </section>
+          <!-- Slide: ¿Cómo Funciona la FQ? -->
+          <section class="part-5" data-background-transition="zoom" data-auto-animate>
+            <h1 class="fixed-title">Mis Aportes Originales</h1>
+            <h2 class="fixed-title">para la Cuantización</h2>
+            <h3>La Clave: Desacoplar Bits y Niveles</h3>
+            <h4>¿Cómo Funciona la Cuantización Flexible?</h4>
+            <div class="slide-content">
+              <p><strong>Concepto:</strong> La idea central es que el número de niveles de cuantización (<code>K</code>) no tiene por qué ser una potencia del número de bits (<code>b</code>). Esto nos da la libertad de elegir los niveles de forma óptima (como en la no uniforme) pero forzándolos a una grilla que el hardware sí entiende (como en la uniforme).</p>
+              <p><strong>Visual:</strong> Usar la figura <code>figures/flex_ptq.drawio.png</code> que es perfecta para explicar esto.</p>
+            </div>
+          </section>
+          <!-- Slide: Proceso de Optimización -->
+          <section class="part-5" data-background-transition="zoom" data-auto-animate>
+            <h1 class="fixed-title">Mis Aportes Originales</h1>
+            <h2 class="fixed-title">para la Cuantización</h2>
+            <h3>Encontrando la Configuración Óptima</h3>
+            <h4>Aporte 2: El Proceso de Optimización (PTQ y QAT)</h4>
+            <div class="slide-content">
+              <p><strong>Concepto:</strong> Se desarrollaron dos métodos para encontrar los mejores parámetros de cuantización:</p>
+              <ol>
+                <li><strong>PTQ (Post-Entrenamiento):</strong> Rápido y sin reentrenamiento.</li>
+                <li><strong>QAT (Consciente del Entrenamiento):</strong> Más lento pero recupera más precisión.</li>
+              </ol>
+              <p><strong>Mencionar:</strong> "Estos algoritmos buscan la mejor configuración respetando siempre las restricciones de hardware, como se explica en detalle en el Capítulo 4".</p>
+              <p class="source"><em>Fuente: <code>02-main_matter/4-flexible_quantization.tex</code> - Secciones 4.3 y 4.4</em></p>
+            </div>
+          </section>
+          <!-- Slide: Resultados Clave -->
+          <section class="part-5" data-background-transition="zoom" data-auto-animate>
+            <h1 class="fixed-title">Mis Aportes Originales</h1>
+            <h2 class="fixed-title">para la Cuantización</h2>
+            <h3>¿Funcionó? ¡Sí!</h3>
+            <h4>Resultados Clave</h4>
+            <div class="slide-content">
+              <p><strong>Concepto:</strong> Mostrar los resultados más impactantes de forma directa.</p>
+              <ul>
+                <li>Se logró comprimir la red hasta <strong>20 veces</strong> (equivalente a ~1.58 bits) con una pérdida de precisión mínima.</li>
+                <li>En muchos casos, se recuperó el <strong>100% de la precisión</strong> del modelo original, pero con una fracción del costo computacional.</li>
+              </ul>
+              <p class="source"><em>Fuente: <code>02-main_matter/5-conclusions.tex</code> - Sección 5.2.3</em></p>
+            </div>
+          </section>
+          <!-- Slide: Gráfico de Resultados -->
+          <section class="part-5" data-background-transition="zoom" data-auto-animate>
+            <h1 class="fixed-title">Mis Aportes Originales</h1>
+            <h2 class="fixed-title">para la Cuantización</h2>
+            <h3>Más Precisión con la Misma Complejidad</h3>
+            <h4>Gráfico de Resultados: FQ vs. Cuantización Uniforme</h4>
+            <div class="slide-content">
+              <p><strong>Visual:</strong> Mostrar un gráfico de "Precisión vs. Complejidad". La curva de Cuantización Flexible (FQ) debe estar por encima de la de Cuantización Uniforme (UQ), demostrando que para un mismo nivel de complejidad, FQ es más precisa.</p>
+              <p><strong>Idea:</strong> Puedes generar una versión simplificada de las figuras de <code>flex_ptq_results.tex</code> o los heatmaps de <code>figure_heatmap_sep_...png</code>.</p>
+            </div>
+          </section>
+          <!-- Slide: Validación Académica -->
+          <section class="part-5" data-background-transition="zoom" data-auto-animate>
+            <h1 class="fixed-title">Mis Aportes Originales</h1>
+            <h2 class="fixed-title">para la Cuantización</h2>
+            <h3>Contribuciones Validadas por la Comunidad Científica</h3>
+            <h4>Validación Académica: Publicaciones</h4>
+            <div class="slide-content">
+              <p><strong>Contenido:</strong> Listar las publicaciones derivadas de la tesis.</p>
+              <ul>
+                <li><em>"Methodology for CNN Implementation in FPGA-Based Embedded Systems", IEEE Embedded Systems Letters, 2023</em></li>
+                <li><em>(Agregar otras publicaciones si existen)</em></li>
+              </ul>
+            </div>
           </section>
         </section>
 
@@ -125,53 +303,38 @@
         <!-- ######################### -->
         <!-- ######## PARTE 3 ######## -->
         <!-- ######################### -->
-        <section class="part-3" data-background-transition="zoom" data-auto-animate>
+        <section class="part-6" data-background-transition="zoom">
           <!-- Slide:  -->
-          <section class="part-3" data-background-transition="zoom" data-auto-animate>
-            <h1>Aportes Originales: Metodología</h1>
-            <h3>Información COMPLETAR</h3>
-            <h4>Descripción COMPLETAR</h4>
+          <section class="part-6" data-background-transition="zoom" data-auto-animate>
+            <h1 class="center-title">Resultados y Conclusiones</h1>
           </section>
-          <!-- Slide:  -->
-          <section class="part-3" data-background-transition="zoom" data-auto-animate>
-            <h1>Aportes Originales: Metodología</h1>
-            <h2>COMPLETAR</h2>
+          <!-- Slide: Conclusiones Principales -->
+          <section class="part-6" data-background-transition="zoom" data-auto-animate>
+            <h1 class="fixed-title">Resultados y Conclusiones</h1>
+            <h3>Resumen de Aportes</h3>
+            <h4>Conclusiones Principales</h4>
+            <div class="slide-content">
+              <p><strong>Contenido:</strong> Reforzar los dos mensajes clave.</p>
+              <ol>
+                <li>Se propuso una <strong>metodología sistemática</strong> que ordena y eficientiza la implementación de CNNs en hardware.</li>
+                <li>Se creó la <strong>cuantización flexible</strong>, un esquema que logra un balance superior entre precisión y eficiencia, manteniendo la compatibilidad con hardware real.</li>
+              </ol>
+              <p class="source"><em>Fuente: <code>02-main_matter/5-conclusions.tex</code> - Sección 5.1</em></p>
+            </div>
           </section>
-        </section>
-
-
-        <!-- ######################### -->
-        <!-- ######## PARTE 4 ######## -->
-        <!-- ######################### -->
-        <section class="part-4" data-background-transition="zoom" data-auto-animate>
-          <!-- Slide:  -->
-          <section class="part-4" data-background-transition="zoom" data-auto-animate>
-            <h1>Aportes Originales: Cuantización Flexible</h1>
-            <h3>Información COMPLETAR</h3>
-            <h4>Descripción COMPLETAR</h4>
-          </section>
-          <!-- Slide:  -->
-          <section class="part-4" data-background-transition="zoom" data-auto-animate>
-            <h1>Aportes Originales: Cuantización Flexible</h1>
-            <h2>COMPLETAR</h2>
-          </section>
-        </section>
-
-
-        <!-- ######################### -->
-        <!-- ######## PARTE 5 ######## -->
-        <!-- ######################### -->
-        <section class="part-5" data-background-transition="zoom" data-auto-animate>
-          <!-- Slide:  -->
-          <section class="part-5" data-background-transition="zoom" data-auto-animate>
-            <h1>Resultados y Conclusiones</h1>
-            <h3>Información COMPLETAR</h3>
-            <h4>Descripción COMPLETAR</h4>
-          </section>
-          <!-- Slide:  -->
-          <section class="part-5" data-background-transition="zoom" data-auto-animate>
-            <h1>Resultados y Conclusiones</h1>
-            <h2>COMPLETAR</h2>
+          <!-- Slide: Impacto y Futuro -->
+          <section class="part-6" data-background-transition="zoom" data-auto-animate>
+            <h1 class="fixed-title">Resultados y Conclusiones</h1>
+            <h3>¿Y ahora qué?</h3>
+            <h3>Impacto y Trabajos Futuros</h3>
+            <div class="slide-content">
+              <p><strong>Contenido:</strong></p>
+              <ul>
+                <li><strong>Impacto:</strong> Este trabajo facilita el despliegue de IA avanzada en dispositivos de borde, con aplicaciones en tiempo real y de bajo consumo.</li>
+                <li><strong>Futuro:</strong> Extender la metodología a arquitecturas más complejas (ResNet), automatizar más el flujo y explorar nuevas aplicaciones.</li>
+              </ul>
+              <p class="source"><em>Fuente: <code>02-main_matter/5-conclusions.tex</code> - Secciones 5.4 y 6</em></p>
+            </div>
           </section>
         </section>
 
@@ -180,13 +343,14 @@
         <!-- ######## PARTE Z ######## -->
         <!-- ######################### -->
         <!-- Slide 17: Fin -->
+        <section data-background-image="./images/background.png" data-background-size="cover" data-background-position="center">
+          <section data-background-image="./images/background.png" data-background-size="cover" data-background-position="center" data-auto-animate>
+            <h1>Preguntas</h1>
+          </section>
+        </section>
         <section data-background-image="./images/background.png" data-background-size="cover" data-background-position="center" data-auto-animate>
           <section data-background-image="./images/background.png" data-background-size="cover" data-background-position="center" data-auto-animate>
-            <h1>Agradecimientos</h1>
-          </section>
-          <section data-background-image="./images/background.png" data-background-size="cover" data-background-position="center" data-auto-animate>
-            <h1>¡Gracias!</h1>
-            <p>¿Preguntas sobre los fundamentos del Fine-Tuning?</p>
+            <h1>¡Muchas Gracias!</h1>
           </section>
         </section>
 
@@ -199,7 +363,7 @@
       Reveal.initialize({
         hash: true,
         transition: 'slide',
-        transitionSpeed: 'default',
+        transitionSpeed: 'slow',
         backgroundTransition: 'fade',
         // The "normal" size of the presentation, aspect ratio will
         // be preserved when the presentation is scaled to fit different

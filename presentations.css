@@ -3,6 +3,16 @@
    Material de Soporte para el Curso de Fine-Tuning
    ============================================ */
 
+/* Override overview background color */
+:root {
+  --r-background-color: #000000;
+}
+
+.reveal-viewport {
+  background: #000000 !important;
+  background-color: var(--r-background-color) !important;
+}
+
 /* Reducir tamaños de fuente globalmente */
 .reveal {
     font-size: 20px !important; /* Reducido de 26px */
@@ -10,10 +20,78 @@
 
 .reveal h1 {
     font-size: 2.0em !important; /* Reducido de 2.5em */
+    text-align: center !important;
 }
 
+.reveal h1.center-title {
+    font-size: 2.0em !important; /* Reducido de 2.5em */
+    text-align: center !important;
+    position: fixed !important;
+    width: 80% !important;
+    left: 10% !important;
+    z-index: 1001 !important;
+    margin: 0 !important;
+    padding: 10px 0 !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* H1 fijo en la parte superior */
+.reveal h1.fixed-title {
+    font-size: 2.0em !important; /* Reducido de 2.5em */
+    text-align: center !important;
+    position: fixed !important;
+    left: 10% !important;
+    top: 15px !important; /* Ajustar según el header */
+    width: 80% !important;
+    z-index: 1001 !important;
+    margin: 0 !important;
+    padding: 10px 0 !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Ajustar contenido cuando hay un título fijo */
+/*.reveal .slides section:has(.fixed-title) {*/
+/*    padding-top: 120px !important;*/
+/*}*/
+
 .reveal h2 {
-    font-size: 1.5em !important; /* Reducido de 1.6em */
+    font-size: 1.6em !important; /* Reducido de 2.5em */
+    text-align: center !important;
+}
+
+.reveal h2.center-title {
+    font-size: 1.6em !important; /* Reducido de 2.5em */
+    text-align: center !important;
+    position: fixed !important;
+    width: 70% !important;
+    left: 15% !important;
+    top: 450px !important;
+    z-index: 1001 !important;
+    margin: 0 !important;
+    padding: 5px 0 !important;
+    background: rgba(230, 230, 230, 0.95) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* H1 fijo en la parte superior */
+.reveal h2.fixed-title {
+    font-size: 1.6em !important; /* Reducido de 2.5em */
+    text-align: center !important;
+    position: fixed !important;
+    width: 70% !important;
+    left: 15% !important;
+    top: 80px !important; /* Positioned right under h1.center-title */
+    z-index: 1001 !important;
+    margin: 0 !important;
+    padding: 5px 0 !important;
+    background: rgba(230, 230, 230, 0.95) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
 }
 
 .reveal h3 {
@@ -48,6 +126,7 @@
 
 .reveal .progress {
     color: #3182ce;
+    z-index: 1001 !important;
 }
 
 /* Elementos de destacado */
@@ -294,6 +373,12 @@
     transition: background-color 0.8s ease;
 }
 
+/* Parte 6 - Color celeste pastel */
+.part-6 {
+    background-color: #D0F0FF !important;
+    transition: background-color 0.8s ease;
+}
+
 /* ============================================
    HEADER, FOOTER Y LOGOS
    ============================================ */
@@ -396,6 +481,13 @@
     align-items: flex-start;
     width: 100%;
     justify-content: space-between;
+}
+
+/* Solo una columna centrada */
+.committee {
+    flex: 1;
+    text-align: center;
+    font-size: 1.3em;
 }
 
 /* Columna izquierda (Director y Co-Director) */
