@@ -27,8 +27,9 @@
     font-size: 2.0em !important; /* Reducido de 2.5em */
     text-align: center !important;
     position: fixed !important;
-    width: 80% !important;
-    left: 10% !important;
+    width: 90% !important;
+    left: 5% !important;
+    top: 350px !important;
     z-index: 1001 !important;
     margin: 0 !important;
     padding: 10px 0 !important;
@@ -42,9 +43,9 @@
     font-size: 2.0em !important; /* Reducido de 2.5em */
     text-align: center !important;
     position: fixed !important;
-    left: 10% !important;
+    left: 5% !important;
     top: 15px !important; /* Ajustar según el header */
-    width: 80% !important;
+    width: 90% !important;
     z-index: 1001 !important;
     margin: 0 !important;
     padding: 10px 0 !important;
@@ -54,9 +55,30 @@
 }
 
 /* Ajustar contenido cuando hay un título fijo */
-/*.reveal .slides section:has(.fixed-title) {*/
-/*    padding-top: 120px !important;*/
-/*}*/
+.reveal .slides section:has(.fixed-title) {
+    padding-top: 120px !important;
+}
+
+/* Ajustar posicionamiento vertical del contenido de las slides */
+.reveal .slides section {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    padding-top: 80px !important;
+    min-height: 100vh !important;
+    box-sizing: border-box !important;
+}
+
+/* Ajuste específico para slides con títulos fijos */
+.reveal .slides section:has(.fixed-title) {
+    padding-top: 140px !important;
+}
+
+/* Ajuste para slides con títulos center-title */
+.reveal .slides section:has(.center-title) {
+    padding-top: 100px !important;
+}
 
 .reveal h2 {
     font-size: 1.6em !important; /* Reducido de 2.5em */
@@ -115,7 +137,7 @@
     font-size: 1.1em !important; /* Reducir elementos de lista */
 }
 
-/* Estilos base */
+/* Estilos base - sobrescrito por el nuevo posicionamiento */
 .reveal .slides section {
     text-align: left;
 }
@@ -537,3 +559,12 @@
         padding: 0;
     }
 }
+
+.image-container {
+    text-align: center !important;
+}
+
+.cite {
+    font-size: 10px !important;
+}
+

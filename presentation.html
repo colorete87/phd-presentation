@@ -20,7 +20,7 @@
     
     <!-- Logos -->
     <img src="./images/logo_left.png" alt="Logo FIUBA" class="presentation-logo-left">
-    <img src="./images/logo_right.png" alt="Logo LSE-FIUBA" class="presentation-logo-right">
+    <img src="./images/logo_right.png" alt="Logo LSE" class="presentation-logo-right">
     
     <!-- Footer con información de la facultad -->
     <div class="presentation-footer">
@@ -65,19 +65,19 @@
         <!-- ######################### -->
         <!-- ######## PARTE 0.1 ###### -->
         <!-- ######################### -->
-        <section class="part-1" data-background-transition="zoom">
+        <section class="part-1">
           <!-- Slide:  -->
-          <section class="part-1" data-background-transition="zoom" data-auto-animate>
+          <section class="part-1" data-auto-animate>
             <h1 class="center-title">Agenda</h1>
           </section>
           <!-- Slide: Hoja de ruta -->
-          <section class="part-1" data-background-transition="zoom" data-auto-animate>
+          <section class="part-1" data-auto-animate>
             <h1 class="fixed-title">Agenda</h1>
             <ol>
-              <li>El Desafío: IA en el mundo real.</li>
-              <li>Mi Aporte: una solución en dos partes.</li>
+              <li>El desafío: IA en el mundo real.</li>
+              <li>Mi aporte: una solución en dos partes.</li>
               <li>Aporte 1: metodología de implementación sistemática.</li>
-              <li>Aporte 2: Cuantización flexible para maximizar eficiencia.</li>
+              <li>Aporte 2: cuantización flexible para maximizar eficiencia.</li>
               <li>Resultados y conclusiones.</li>
             </ol>
           </section>
@@ -87,30 +87,38 @@
         <!-- ######################### -->
         <!-- ######## PARTE 1 ######## -->
         <!-- ######################### -->
-        <section class="part-2" data-background-transition="zoom">
+        <section class="part-2">
           <!-- Slide:  -->
-          <section class="part-2" data-background-transition="zoom" data-auto-animate>
+          <section class="part-2" data-auto-animate>
             <h1 class="center-title">Introducción y conceptos fundamentales</h1>
           </section>
           <!-- Slide: ¿Qué es una CNN? -->
-          <section class="part-2" data-background-transition="zoom" data-auto-animate>
+          <section class="part-2" data-auto-animate>
             <h1 class="fixed-title">Introducción y conceptos fundamentales</h1>
-            <h3>Aprendiendo a "Ver" como los Humanos</h3>
-            <h3>¿Qué es una Red Neuronal Convolucional (CNN)?</h3>
+            <h3>Aprendiendo a "ver" como los humanos: redes neuronales convolucionales</h3>
             <div class="slide-content">
-              <p><strong>Concepto:</strong> Una CNN es un modelo inspirado en el cerebro que procesa imágenes en capas:</p>
+              <p>Una CNN es un modelo <strong>inspirado en el cerebro</strong> que procesa imágenes en capas:</p>
               <ul>
                 <li>Las primeras capas detectan cosas simples (bordes, colores)</li>
                 <li>Las capas más profundas reconocen objetos complejos (caras, autos)</li>
               </ul>
-              <p><strong>Visual:</strong> Usar una figura como <code>figures/general_cnn_simple.png</code> o <code>figures/lenet5.png</code> para ilustrar las capas.</p>
+              <div class="image-container">
+                <img src="./images/lenet5.png" alt="LeNet-5" style="height: 240px;">
+                <article class="cite">
+                  <p>
+                    <strong>Lecun, Y., Bottou, L., Bengio, Y., &amp; Haffner, P.</strong> (1998).<br>
+                    Gradient-based learning applied to document recognition.<br>
+                    <em>Proceedings of the IEEE</em>, 86(11), 2278–2324.<br>
+                    <a href="https://doi.org/10.1109/5.726791" target="_blank">https://doi.org/10.1109/5.726791</a>
+                  </p>
+                </article>
+              </div>
             </div>
           </section>
           <!-- Slide: El Desafío Técnico -->
-          <section class="part-2" data-background-transition="zoom" data-auto-animate>
+          <section class="part-2" data-auto-animate>
             <h1 class="fixed-title">Introducción y conceptos fundamentales</h1>
-            <h3>El balance entre costo y calidad</h3>
-            <h3>El desafío técnico: complejidad y precisión</h3>
+            <h3>El balance entre costo y calidad: complejidad y precisión</h3>
             <div class="slide-content">
               <p><strong>Concepto:</strong> La "magia" de las redes neuronales está en sus números (los "pesos"). Usar números de alta precisión (como <code>float32</code>) da buenos resultados, pero es lento y consume mucha memoria.</p>
               <p class="question"><strong>Pregunta Clave:</strong> ¿Podemos usar números de "baja precisión" para hacer la red más rápida y pequeña?</p>
@@ -118,10 +126,9 @@
             </div>
           </section>
           <!-- Slide: La Solución Clave -->
-          <section class="part-2" data-background-transition="zoom" data-auto-animate>
+          <section class="part-2" data-auto-animate>
             <h1 class="fixed-title">Introducción y conceptos fundamentales</h1>
-            <h3>Comprimiendo la red: la idea de la cuantización</h3>
-            <h3>La solución clave: la cuantización</h3>
+            <h3>Comprimiendo la red: la solución clave es la cuantización</h3>
             <div class="slide-content">
               <p><strong>Concepto:</strong> La cuantización es el proceso de reducir la precisión de los números. Es como redondear. Esto reduce drásticamente el tamaño del modelo y la complejidad de las operaciones.</p>
               <p><strong>Visual:</strong> Usar la figura <code>figures/specific_quantization_function_uniform.png</code> para mostrar cómo un rango continuo se mapea a niveles discretos.</p>
@@ -133,13 +140,13 @@
         <!-- ######################### -->
         <!-- ######## PARTE 2 ######## -->
         <!-- ######################### -->
-        <section class="part-3" data-background-transition="zoom">
+        <section class="part-3">
           <!-- Slide:  -->
-          <section class="part-3" data-background-transition="zoom" data-auto-animate>
+          <section class="part-3" data-auto-animate>
             <h1 class="center-title">Mis Aportes Originales</h1>
           </section>
           <!-- Slide: Mi Propuesta -->
-          <section class="part-3" data-background-transition="zoom" data-auto-animate>
+          <section class="part-3" data-auto-animate>
             <h1 class="fixed-title">Mis Aportes Originales</h1>
             <h3>Mi Propuesta: Un Puente Integral del Software al Hardware</h3>
             <div class="slide-content">
@@ -160,14 +167,14 @@
         <!-- ######################### -->
         <!-- ######## PARTE 2.1 ###### -->
         <!-- ######################### -->
-        <section class="part-4" data-background-transition="zoom">
+        <section class="part-4">
           <!-- Slide:  -->
-          <section class="part-4" data-background-transition="zoom" data-auto-animate>
+          <section class="part-4" data-auto-animate>
             <h1 class="center-title">Mis Aportes Originales</h1>
             <h2 class="center-title">para la Metodología</h2>
           </section>
           <!-- Slide: Metodología Sistemática -->
-          <section class="part-4" data-background-transition="zoom" data-auto-animate>
+          <section class="part-4" data-auto-animate>
             <h1 class="fixed-title">Mis Aportes Originales</h1>
             <h2 class="fixed-title">para la Metodología</h2>
             <h3>Del Caos al Orden: Un Proceso en 9 Fases</h3>
@@ -179,7 +186,7 @@
             </div>
           </section>
           <!-- Slide: Arquitectura Modular -->
-          <section class="part-4" data-background-transition="zoom" data-auto-animate>
+          <section class="part-4" data-auto-animate>
             <h1 class="fixed-title">Mis Aportes Originales</h1>
             <h2 class="fixed-title">para la Metodología</h2>
             <h3>Organizando el Hardware: Bloques Especializados</h3>
@@ -191,7 +198,7 @@
             </div>
           </section>
           <!-- Slide: Arquitectura Real y Verificada -->
-          <section class="part-4" data-background-transition="zoom" data-auto-animate>
+          <section class="part-4" data-auto-animate>
             <h1 class="fixed-title">Mis Aportes Originales</h1>
             <h2 class="fixed-title">para la Metodología</h2>
             <h3>De la Teoría a la Práctica: El Hardware Funcionando</h3>
@@ -208,14 +215,14 @@
         <!-- ######################### -->
         <!-- ######## PARTE 2.2 ###### -->
         <!-- ######################### -->
-        <section class="part-5" data-background-transition="zoom">
+        <section class="part-5">
           <!-- Slide:  -->
-          <section class="part-5" data-background-transition="zoom" data-auto-animate>
+          <section class="part-5" data-auto-animate>
             <h1 class="center-title">Mis Aportes Originales</h1>
             <h2 class="center-title">para la Cuantización</h2>
           </section>
           <!-- Slide: Cuantización Flexible -->
-          <section class="part-5" data-background-transition="zoom" data-auto-animate>
+          <section class="part-5" data-auto-animate>
             <h1 class="fixed-title">Mis Aportes Originales</h1>
             <h2 class="fixed-title">para la Cuantización</h2>
             <h3>El Dilema de la Cuantización: ¿Uniforme o No Uniforme?</h3>
@@ -231,7 +238,7 @@
             </div>
           </section>
           <!-- Slide: ¿Cómo Funciona la FQ? -->
-          <section class="part-5" data-background-transition="zoom" data-auto-animate>
+          <section class="part-5" data-auto-animate>
             <h1 class="fixed-title">Mis Aportes Originales</h1>
             <h2 class="fixed-title">para la Cuantización</h2>
             <h3>La Clave: Desacoplar Bits y Niveles</h3>
@@ -242,7 +249,7 @@
             </div>
           </section>
           <!-- Slide: Proceso de Optimización -->
-          <section class="part-5" data-background-transition="zoom" data-auto-animate>
+          <section class="part-5" data-auto-animate>
             <h1 class="fixed-title">Mis Aportes Originales</h1>
             <h2 class="fixed-title">para la Cuantización</h2>
             <h3>Encontrando la Configuración Óptima</h3>
@@ -258,7 +265,7 @@
             </div>
           </section>
           <!-- Slide: Resultados Clave -->
-          <section class="part-5" data-background-transition="zoom" data-auto-animate>
+          <section class="part-5" data-auto-animate>
             <h1 class="fixed-title">Mis Aportes Originales</h1>
             <h2 class="fixed-title">para la Cuantización</h2>
             <h3>¿Funcionó? ¡Sí!</h3>
@@ -273,7 +280,7 @@
             </div>
           </section>
           <!-- Slide: Gráfico de Resultados -->
-          <section class="part-5" data-background-transition="zoom" data-auto-animate>
+          <section class="part-5" data-auto-animate>
             <h1 class="fixed-title">Mis Aportes Originales</h1>
             <h2 class="fixed-title">para la Cuantización</h2>
             <h3>Más Precisión con la Misma Complejidad</h3>
@@ -284,7 +291,7 @@
             </div>
           </section>
           <!-- Slide: Validación Académica -->
-          <section class="part-5" data-background-transition="zoom" data-auto-animate>
+          <section class="part-5" data-auto-animate>
             <h1 class="fixed-title">Mis Aportes Originales</h1>
             <h2 class="fixed-title">para la Cuantización</h2>
             <h3>Contribuciones Validadas por la Comunidad Científica</h3>
@@ -303,13 +310,13 @@
         <!-- ######################### -->
         <!-- ######## PARTE 3 ######## -->
         <!-- ######################### -->
-        <section class="part-6" data-background-transition="zoom">
+        <section class="part-6">
           <!-- Slide:  -->
-          <section class="part-6" data-background-transition="zoom" data-auto-animate>
+          <section class="part-6" data-auto-animate>
             <h1 class="center-title">Resultados y Conclusiones</h1>
           </section>
           <!-- Slide: Conclusiones Principales -->
-          <section class="part-6" data-background-transition="zoom" data-auto-animate>
+          <section class="part-6" data-auto-animate>
             <h1 class="fixed-title">Resultados y Conclusiones</h1>
             <h3>Resumen de Aportes</h3>
             <h4>Conclusiones Principales</h4>
@@ -323,7 +330,7 @@
             </div>
           </section>
           <!-- Slide: Impacto y Futuro -->
-          <section class="part-6" data-background-transition="zoom" data-auto-animate>
+          <section class="part-6" data-auto-animate>
             <h1 class="fixed-title">Resultados y Conclusiones</h1>
             <h3>¿Y ahora qué?</h3>
             <h3>Impacto y Trabajos Futuros</h3>
@@ -345,7 +352,7 @@
         <!-- Slide 17: Fin -->
         <section data-background-image="./images/background.png" data-background-size="cover" data-background-position="center">
           <section data-background-image="./images/background.png" data-background-size="cover" data-background-position="center" data-auto-animate>
-            <h1>Preguntas</h1>
+            <h1>¿Preguntas?</h1>
           </section>
         </section>
         <section data-background-image="./images/background.png" data-background-size="cover" data-background-position="center" data-auto-animate>
@@ -364,12 +371,12 @@
         hash: true,
         transition: 'slide',
         transitionSpeed: 'slow',
-        backgroundTransition: 'fade',
+        backgroundTransition: 'zoom',
         // The "normal" size of the presentation, aspect ratio will
         // be preserved when the presentation is scaled to fit different
         // resolutions. Can be specified using percentage units.
-        width: 1200,
-        height: 720,
+        width: 1024,
+        height: 768,
         // Display presentation control arrows.
         center: true,
         // Factor of the display size that should remain empty around
