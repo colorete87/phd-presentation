@@ -976,7 +976,7 @@
           <section class="part-5" data-auto-animate>
             <h1 class="fixed-title">Mis aportes originales</h1>
             <h2 class="fixed-title">Cuantización flexible</h2>
-            <h3>El Proceso de optimización para PTQ - Exploración y casos de uso</h3>
+            <h3>El proceso de optimización para PTQ - Exploración y casos de uso</h3>
             <div class="slide-content two-columns">
               <div class="column">
                 <h4>Proceso de Optimización:</h4>
@@ -1000,7 +1000,7 @@
           <section class="part-5" data-auto-animate>
             <h1 class="fixed-title">Mis aportes originales</h1>
             <h2 class="fixed-title">Cuantización flexible</h2>
-            <h3>El Proceso de optimización para PTQ - Mayor granularidad</h3>
+            <h3>El proceso de optimización para PTQ - Mayor granularidad</h3>
             <div class="slide-content">
               <p>No se realizó una exploración exhaustiva, sino que se consideraron 3 configuraciones:</p>
               <ul>
@@ -1014,8 +1014,21 @@
           <section class="part-5" data-auto-animate>
             <h1 class="fixed-title">Mis aportes originales</h1>
             <h2 class="fixed-title">Cuantización flexible</h2>
-            <h3>El proceso de optimización para QAT</h3>
             <div class="slide-content">
+            <h3>El proceso de optimización para QAT</h3>
+            <div class="slide-content two-columns">
+              <div class="column">
+                <h4>Proceso de Optimización:</h4>
+                <ol>
+                  <li>Se fijan α, b, y k, para la red</li>
+                  <li>Se entrenan α, v y t, junto con los pesos de la red</li>
+                  <li>Se calcula la <em>accuracy</em> y la complejidad</li>
+                  <li>Se repite el proceso</li>
+                </ol>
+              </div>
+              <div class="column">
+                <img src="images/6g-qat.gif" alt="Proceso de optimización k-means" class="process-image">
+              </div>
             </div>
           </section>
           <!-- Slide: Proceso de Optimización QAT -->
@@ -1148,8 +1161,17 @@
             <h3>Publicaciones</h3>
             <div class="slide-content">
               <ul>
-                <li><em>"Methodology for CNN Implementation in FPGA-Based Embedded Systems", IEEE Embedded Systems Letters, 2023</em></li>
-                <li><em>"Methodology for CNN Implementation in FPGA-Based Embedded Systems", IEEE Embedded Systems Letters, 2023</em></li>
+                <li>
+                    F. G. Zacchigna, “Methodology for CNN Implementation in FPGA-Based Embedded Systems,”
+                    <i>IEEE Embedded Systems Letters</i>, vol. 15, no. 2, pp. 85–88, 2023,
+                    doi: <a href="https://doi.org/10.1109/LES.2022.3187382">10.1109/LES.2022.3187382</a>.
+                </li>
+                <li>
+                  F. G. Zacchigna, S. Lew, and A. Lutenberg, “Flexible Quantization for Efficient Convolutional Neural Networks,”
+                  <em>Electronics</em>, vol. 13, no. 10, Art. no. 1923, 2024.
+                  [Online]. Available: <a href="https://www.mdpi.com/2079-9292/13/10/1923" target="_blank">https://www.mdpi.com/2079-9292/13/10/1923</a>.
+                  doi: <a href="https://doi.org/10.3390/electronics13101923" target="_blank">10.3390/electronics13101923</a>
+                </li>
                 <li>Los resultados sobre la granularidad por canal todavía no fueron publicados.</li>
                 <li>Los resultados de QAT todavía no fueron publicados.</li>
               </ul>
@@ -1161,8 +1183,10 @@
             <h3>¿Y ahora qué?</h3>
             <div class="slide-content">
               <ul>
-                <li><strong>Impacto:</strong> Este trabajo facilita el despliegue de IA avanzada en dispositivos de borde, con aplicaciones en tiempo real y de bajo consumo.</li>
-                <li><strong>Futuro:</strong> Extender la metodología a arquitecturas más complejas (ResNet), automatizar más el flujo y explorar nuevas aplicaciones.</li>
+                <li><strong>Algoritmos de optimización mejorados:</strong> Optimización bayesiana y técnicas evolutivas para búsqueda más eficiente de configuraciones de cuantización</li>
+                <li><strong>Cuantización de activaciones flexible:</strong> Extensión del cuantizador flexible a activaciones con hardware especializado</li>
+                <li><strong>Granularidad adaptativa:</strong> Técnicas automáticas para determinar el nivel óptimo de granularidad por canal, grupo o capa</li>
+                <li><strong>Framework completo:</strong> Herramientas de desarrollo, análisis y simulación para cuantización flexible</li>
               </ul>
             </div>
           </section>
