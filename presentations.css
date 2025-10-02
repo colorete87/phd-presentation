@@ -383,6 +383,16 @@
    CLASES PARA PARTES DE LA PRESENTACIÓN
    ============================================ */
 
+/* Clase para ocultar header y footer */
+body.no-header-footer .presentation-header,
+body.no-header-footer .presentation-footer,
+body.no-header-footer .presentation-logo-left,
+body.no-header-footer .presentation-logo-right {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
 /* Parte 1 - Color azul claro */
 .part-1 {
     background-color: #E6F7FF !important;
