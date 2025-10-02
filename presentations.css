@@ -117,16 +117,16 @@
 }
 
 .reveal h3 {
-    font-size: 1.3em !important; /* Reducido de 1.3em */
+    font-size: 1.5em !important; /* Reducido de 1.3em */
 }
 
 .reveal h4 {
-    font-size: 1.1em !important; /* Reducido de 1em */
+    font-size: 1.3em !important; /* Reducido de 1em */
 }
 
 /* Tamaño específico para texto normal */
 .reveal p {
-    font-size: 1.1em !important; /* Reducir párrafos */
+    font-size: 1.3em !important; /* Reducir párrafos */
 }
 
 .reveal ul, .reveal ol {
@@ -135,6 +135,15 @@
 
 .reveal li {
     font-size: 1.1em !important; /* Reducir elementos de lista */
+}
+
+/* Reducir tamaño de sub-listas */
+.reveal ul ul, .reveal ol ol, .reveal ul ol, .reveal ol ul {
+    font-size: 1.0em !important;
+}
+
+.reveal ul ul li, .reveal ol ol li, .reveal ul ol li, .reveal ol ul li {
+    font-size: 1.0em !important;
 }
 
 /* Estilos base - sobrescrito por el nuevo posicionamiento */
@@ -377,15 +386,15 @@
     transition: background-color 0.8s ease;
 }
 
-/* Parte 3 - Color amarillo claro */
+/* Parte 3 - Color naranja claro */
 .part-3 {
-    background-color: #FFF8E7 !important;
+    background-color: #FFE5CC !important;
     transition: background-color 0.8s ease;
 }
 
-/* Parte 4 - Color naranja claro */
+/* Parte 4 - Color amarillo claro */
 .part-4 {
-    background-color: #FFE5CC !important;
+    background-color: #FFF8E7 !important;
     transition: background-color 0.8s ease;
 }
 
@@ -562,6 +571,83 @@
 
 .image-container {
     text-align: center !important;
+}
+
+.image-container-phases {
+    text-align: center !important;
+    position: fixed !important;
+    top: 120px !important;
+    height: 480px !important;
+}
+
+.image-wrapper {
+    position: relative !important;
+    display: inline-block !important;
+}
+
+.slide-content-phases {
+    position: fixed !important;
+    top: 120px !important;
+    text-align: center !important;
+}
+
+.agenda-list {
+    font-size: 1.6em !important;
+}
+
+.agenda-list li {
+    font-size: 1.6em !important;
+    margin-bottom: 0.5em !important;
+}
+
+.side-by-side-images {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 40px !important;
+    margin: 20px 0 !important;
+}
+
+.hand-drawn-circle {
+    position: absolute !important;
+    width: 60px !important;
+    height: 60px !important;
+    border: 3px solid #ff6b6b !important;
+    border-radius: 50% !important;
+    background: transparent !important;
+    pointer-events: none !important;
+    z-index: 10 !important;
+    /* Hand-drawn effect */
+    box-shadow: 
+        0 0 0 1px rgba(255, 107, 107, 0.3),
+        0 0 0 2px rgba(255, 107, 107, 0.1) !important;
+    /* Slight rotation for hand-drawn look */
+    transform: rotate(-2deg) !important;
+    /* Irregular border effect */
+    border-style: solid !important;
+    border-width: 3px 2px 4px 3px !important;
+    /* Smooth transitions for auto-animate */
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    /* Initial state for animation */
+    opacity: 0 !important;
+    transform: rotate(-2deg) scale(0.8) !important;
+}
+
+/* Animation states for reveal.js auto-animate */
+[data-auto-animate] .hand-drawn-circle {
+    opacity: 1 !important;
+    transform: rotate(-2deg) scale(1) !important;
+}
+
+/* Pulse effect when circle appears */
+@keyframes circlePulse {
+    0% { transform: rotate(-2deg) scale(0.8); opacity: 0; }
+    50% { transform: rotate(-2deg) scale(1.1); opacity: 1; }
+    100% { transform: rotate(-2deg) scale(1); opacity: 1; }
+}
+
+.hand-drawn-circle[data-auto-animate-delay] {
+    animation: circlePulse 0.8s ease-out forwards !important;
 }
 
 .cite {
