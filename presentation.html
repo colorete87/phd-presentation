@@ -368,7 +368,7 @@
               <p>Motivación:</p>
               <ul>
                 <li>IAs cada vez más grandes</li>
-                <li>que solucionana problemas cada vez más complejos</li>
+                <li>que solucionan problemas cada vez más complejos</li>
                 <li>en diversos campos de aplicación</li>
               </ul>
               <p>Objetivos:</p>
@@ -433,7 +433,7 @@
             <h1 class="fixed-title">Introducción y conceptos fundamentales</h1>
             <h3>La solución clave es la compresión de la red</h3>
             <div class="slide-content">
-              <p>Existe un <strong>relación de compromiso</strong> entre costo y calidad o entre complejidad y precisión</p>
+              <p>Existe una <strong>relación de compromiso</strong> entre costo y calidad o entre complejidad y precisión</p>
             </div>
             <div class="slide-content" style="display: flex; gap: 20px;">
               <div class="fragment" style="flex: 1;">
@@ -1000,7 +1000,7 @@
               <ul>
                 <li>el número de bits (<code>b</code>): <code>16</code> valores</li>
                 <li>el valor de <em>clipping</em> (<code>&alpha;</code>): <code>16</code> valores</li>
-                <li>el número de nivles (<code>k</code>): <code>16</code> valores</li>
+                <li>el número de niveles (<code>k</code>): <code>16</code> valores</li>
                 <li>los valores de los niveles (<code>v</code>): <code>&sum; k<sub>i</sub></code> valores</li>
                 <li>los valores de los umbrales (<code>t</code>): <code>&sum; (k<sub>i</sub>-1)</code> valores</li>
               </ul>
@@ -1019,10 +1019,10 @@
                   <strong>Cuantización post-entrenamiento (PTQ):</strong>
                   <ol>
                     <li>Sin ajuste fino: rápido y sin reentrenamiento.</li>
-                    <li>Con ajuste fino: más lento, pero con mejore resultados. Requiere datos.</li>
+                    <li>Con ajuste fino: más lento, pero con mejores resultados. Requiere datos.</li>
                   </ol>
                 </li>
-                <li><strong>Entrenamiento consciente de cuantización (QAT):</strong> más lento pero recupera más precisión. Require datos.</li>
+                <li><strong>Entrenamiento consciente de cuantización (QAT):</strong> más lento pero recupera más precisión. Requiere datos.</li>
               </ol>
             </div>
           </section>
@@ -1209,13 +1209,12 @@
               <ul>
                 <li>
                     F. G. Zacchigna, “Methodology for CNN Implementation in FPGA-Based Embedded Systems,”
-                    <i>IEEE Embedded Systems Letters</i>, vol. 15, no. 2, pp. 85–88, 2023,
+                    <em>IEEE Embedded Systems Letters</em>, vol. 15, no. 2, pp. 85–88, 2023,
                     doi: <a href="https://doi.org/10.1109/LES.2022.3187382">10.1109/LES.2022.3187382</a>.
                 </li>
                 <li>
                   F. G. Zacchigna, S. Lew, and A. Lutenberg, “Flexible Quantization for Efficient Convolutional Neural Networks,”
                   <em>Electronics</em>, vol. 13, no. 10, Art. no. 1923, 2024.
-                  [Online]. Available: <a href="https://www.mdpi.com/2079-9292/13/10/1923" target="_blank">https://www.mdpi.com/2079-9292/13/10/1923</a>.
                   doi: <a href="https://doi.org/10.3390/electronics13101923" target="_blank">10.3390/electronics13101923</a>
                 </li>
                 <li>Los resultados sobre la granularidad por canal todavía no fueron publicados.</li>
@@ -1229,10 +1228,12 @@
             <h3>¿Y ahora qué?</h3>
             <div class="slide-content">
               <ul>
+                <li><strong>Migración a PyTorch:</strong> Dado que estamos en una etapa de investigación PyTorch es el <em>framework</em> indicado</li>
                 <li><strong>Algoritmos de optimización mejorados:</strong> Optimización bayesiana y técnicas evolutivas para búsqueda más eficiente de configuraciones de cuantización</li>
-                <li><strong>Cuantización de activaciones flexible:</strong> Extensión del cuantizador flexible a activaciones con hardware especializado</li>
                 <li><strong>Granularidad adaptativa:</strong> Técnicas automáticas para determinar el nivel óptimo de granularidad por canal, grupo o capa</li>
-                <li><strong>Framework completo:</strong> Herramientas de desarrollo, análisis y simulación para cuantización flexible</li>
+                <li><strong>Cuantización flexible multidimensional:</strong> Explorar algoritmos de cuantización flexible multidimensional</li>
+                <li><strong>Cuantización flexible en transformers:</strong> Explorar el potencial de la cuantización flexible en otras redes, especialmente transformers</li>
+                <li><strong>Integración con otros frameworks:</strong> Integración de la cuantización flexible en un framework de cuantización que se esté desarrollando activamente</li>
               </ul>
             </div>
           </section>
